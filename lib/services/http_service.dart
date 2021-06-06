@@ -9,11 +9,11 @@ class Network {
 
   /* Http Apis */
 
-  static String API_LIST = "/api/v1/contacts";
-  static String API_CREATE = "/api/v1/contacts";
-  static String API_UPDATE = "/api/v1/contacts/"; //{id}
-  static String API_DELETE = "/api/v1/contacts/"; //{id}
-  static String API_SEARCH = "/api/v1/contacts"; //{String text}
+  static String API_LIST = "/api/contacts";
+  static String API_CREATE = "/api/contacts";
+  static String API_UPDATE = "/api/contacts/"; //{id}
+  static String API_DELETE = "/api/contacts/"; //{id}
+  static String API_SEARCH = "/api/contacts"; //{String text}
 
   /* Http Requests */
 
