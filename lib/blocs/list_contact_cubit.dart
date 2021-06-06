@@ -16,6 +16,7 @@ class ListContactCubit extends Cubit<ListContactState> {
     } else {
       emit(ListContactError(error: "Couldn't fetch contacts"));
     }
+    print(response);
   }
 
   Future<void> apiContactDelete(Contact contact) async {

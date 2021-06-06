@@ -20,7 +20,7 @@ Widget itemOfList({BuildContext context, Contact contact}) {
         child: Icon(Icons.person, color: Colors.white, size: 30,),
       ),
       title: Text(contact.fullname,),
-      subtitle: Text(contact.phoneNumber),
+      subtitle: Text(contact.mobile),
     ),
     actions: <Widget>[
       IconSlideAction(

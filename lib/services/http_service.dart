@@ -65,7 +65,7 @@ class Network {
   static Map<String, String> paramsCreate(Contact contact) {
     Map<String, String> params = new Map();
     params.addAll({
-      'phone_number': contact.phoneNumber,
+      'phone_number': contact.mobile,
       'fullname': contact.fullname,
     });
     return params;
@@ -75,7 +75,7 @@ class Network {
     Map<String, String> params = new Map();
     params.addAll({
       'id': contact.id,
-      'phone_number': contact.phoneNumber,
+      'phone_number': contact.mobile,
       'fullname': contact.fullname,
     });
     return params;
