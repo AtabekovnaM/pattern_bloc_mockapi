@@ -1,6 +1,10 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pattern_bloc_mockapi/blocs/list_contact_state.dart';
 import 'package:pattern_bloc_mockapi/model/contact_model.dart';
+import 'package:pattern_bloc_mockapi/pages/create_page.dart';
+import 'package:pattern_bloc_mockapi/pages/update_page.dart';
 import 'package:pattern_bloc_mockapi/services/http_service.dart';
 
 
@@ -28,6 +32,16 @@ class ListContactCubit extends Cubit<ListContactState> {
     } else {
       emit(ListContactError(error: "Couldn't delete contact"));
     }
+  }
+
+  Future apiCreateContact(BuildContext context) async {
+    String response = await Navigator.push(context, MaterialPageRoute(builder: (context) => CreatePage()));
+    if (response != null) apiListContact();
+  }
+
+  Future apiUpdateContact(BuildContext context, Contact contact) async {
+    String response = await Navigator.push(context, MaterialPageRoute(builder: (context) => UpdatePage(contact: contact,),),);
+    if (response != null) apiListContact();
   }
 
 }

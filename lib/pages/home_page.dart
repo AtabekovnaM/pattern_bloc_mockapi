@@ -35,7 +35,6 @@ class _HomePageState extends State<HomePage> {
             items = state.contacts;
             return viewOfHome(context, items, false);
           }
-
           return viewOfHome(context, items, true);
         },
       ),
@@ -44,7 +43,7 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: Colors.blue,
         foregroundColor: Colors.white,
         onPressed: () {
-
+          BlocProvider.of<ListContactCubit>(context).apiCreateContact(context);
         },
       ),
     );

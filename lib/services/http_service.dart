@@ -88,4 +88,9 @@ class Network {
     var data = List<Contact>.from(json.map((x) => Contact.fromJson(x)));
     return data;
   }
+  static Contact parsePost(String response) {
+    dynamic json = jsonDecode(response);
+    var data = Contact.fromJson(json);
+    return data;
+  }
 }
