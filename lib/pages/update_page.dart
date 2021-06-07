@@ -23,6 +23,7 @@ class UpdatePage extends StatelessWidget {
       create: (context) => UpdateContactCubit(),
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.red,
           title: Text('Update Contact',),
         ),
         body: BlocBuilder<UpdateContactCubit, UpdateContactState>(

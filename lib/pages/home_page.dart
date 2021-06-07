@@ -24,7 +24,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Contacts', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w500)),
+        backgroundColor: Colors.red,
+        title: Text('Contacts'),
       ),
       body: BlocBuilder<ListContactCubit, ListContactState>(
         builder: (context, state) {
@@ -40,7 +41,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.red,
         foregroundColor: Colors.white,
         onPressed: () {
           BlocProvider.of<ListContactCubit>(context).apiCreateContact(context);

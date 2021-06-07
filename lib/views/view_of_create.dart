@@ -40,7 +40,7 @@ Widget viewOfCreate(BuildContext context, TextEditingController fullnameControll
                     border: InputBorder.none,
                     hintStyle: TextStyle(color: Colors.grey),
                     hintText: 'Mobile',
-                    icon: Icon(Icons.phone)
+                    icon: Icon(Icons.phone),
                 ),
                 keyboardType: TextInputType.phone,
                 autofocus: true,
@@ -52,7 +52,7 @@ Widget viewOfCreate(BuildContext context, TextEditingController fullnameControll
               width: double.infinity,
               margin: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
               decoration: BoxDecoration(
-                  color: Colors.blueAccent,
+                  color: Colors.red,
                   borderRadius: BorderRadius.circular(10)
               ),
               child: FlatButton(

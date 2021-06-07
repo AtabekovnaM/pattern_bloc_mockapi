@@ -23,6 +23,7 @@ class CreatePage extends StatelessWidget {
       create: (context) => CreateContactCubit(),
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.red,
           title: Text('Create Contact'),
         ),
         body: BlocBuilder<CreateContactCubit, CreateContactState>(

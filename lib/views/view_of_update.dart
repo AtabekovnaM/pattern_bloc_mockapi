@@ -53,7 +53,7 @@ Widget viewOfUpdate(BuildContext context, bool isLoading,TextEditingController f
               width: double.infinity,
               margin: EdgeInsets.symmetric(vertical: 15, horizontal: 20),
               decoration: BoxDecoration(
-                  color: Colors.blueAccent,
+                  color: Colors.red,
                   borderRadius: BorderRadius.circular(10)
               ),
               child: FlatButton(
